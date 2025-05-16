@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-btn ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-btn a {
+  color: var(--grey, #5c5c5e);
+
+  /* menu */
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.navbar-btn {
+  margin-top: 15px;
+}
+
+.navbar-shop {
+  margin-top: 10px;
+}
+
+nav {
+  border-bottom: 1px solid var(--light-grey, #cacad6);
+  background: var(--white, #f6f4f5);
+  padding: 19px 0;
+}
+
+.background-clip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-clip {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .background-clip {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.hero {
+  padding-top: 230px;
+}
+
+.hero-content h1 {
+  color: var(--grey, #f6f4f5);
+
+  /* H0 */
+  font-family: "Roboto", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.get {
+  color: var(--grey, #f6f4f5);
+
+  /* H1 */
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main {
+  color: var(--grey, #f6f4f5);
+
+  /* text 13 */
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn-group {
+  margin-top: 50px;
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.btn-group a:nth-child(1) {
+  color: var(--white, #f6f4f5);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+  padding: 21px 111px;
+  background: var(
+    --gradient,
+    linear-gradient(180deg, #bc10d8 0%, rgba(80, 0, 250, 0.93) 100%)
+  );
+  padding: 21px 111px;
+}
+
+.btn-group a:nth-child(2) {
+  color: var(--grey, #f6f4f5);
+
+  /* button */
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+  border: 1px solid var(--gradient, #bc10d8);
+  background: rgba(217, 217, 217, 0);
+  padding: 21px 111px;
+}
